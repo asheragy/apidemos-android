@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cerion.apidemos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:label="@string/title_activity_recycler_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".multipane.FragmentActivity"
+            android:label="Fragment Layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".multipane.DetailsActivity"
+            android:label="List Item Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageGridActivity"
+            android:label="Color Grid Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".service.SimpleIntentService" />
+
+        <activity
+            android:name=".service.ServiceActivity"
+            android:label="Service" />
+
+        <service
+            android:name=".service.SimpleService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".design.DrawerActivity"
+            android:label="NavDrawerActivity" />
+        <activity
+            android:name=".design.ToolbarActivity"
+            android:label="Toolbar Activity" />
+        <activity android:name=".design.DrawerWithToolbarActivity"></activity>
+    </application>
+
+</manifest>
