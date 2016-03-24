@@ -42,6 +42,7 @@ public class ImageGridActivity extends Activity {
         mGridView.setAdapter(mAdapter);
     }
 
+
     private class GridAdapter extends ArrayAdapter<ColorData> {
 
         private static final int RES = R.layout.color_grid_item;
@@ -89,7 +90,7 @@ public class ImageGridActivity extends Activity {
                 bmp = mImageMap.get(key);
             }
             else {
-                bmp = Bitmap.createScaledBitmap( color.getBitmap(BITMAP_DIMS,BITMAP_DIMS) , width, width, false);
+                bmp = getScaledBitmap(color,width);
                 mImageMap.put(key,bmp);
             }
             viewHolder.mImage.setImageBitmap(bmp);
@@ -97,7 +98,10 @@ public class ImageGridActivity extends Activity {
             return convertView;
         }
 
+    }
 
+    private Bitmap getScaledBitmap(ColorData color, int size) {
+        return Bitmap.createScaledBitmap( color.getBitmap(BITMAP_DIMS,BITMAP_DIMS) , size, size, false);
     }
 
 }

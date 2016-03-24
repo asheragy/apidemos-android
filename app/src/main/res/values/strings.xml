@@ -4,5 +4,6 @@
     <string name="title_activity_recycler_view">RecyclerViewActivity</string>
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
+    <string name="title_activity_custom_intent_service">CustomIntentServiceActivity</string>
 
 </resources>

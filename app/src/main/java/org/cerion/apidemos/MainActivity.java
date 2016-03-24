@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import org.cerion.apidemos.design.DrawerActivity;
 import org.cerion.apidemos.design.ToolbarActivity;
+import org.cerion.apidemos.service.CustomIntentServiceActivity;
+import org.cerion.apidemos.service.MessageServiceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,12 +38,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //Intent intent = new Intent(MainActivity.this,RecyclerViewActivity.class);
+                Intent intent = new
+                        //Intent(MainActivity.this,RecyclerViewActivity.class);
                 //Intent intent = new Intent(MainActivity.this,FragmentActivity.class);
-                //Intent intent = new Intent(MainActivity.this,ImageGridActivity.class);
+                        //Intent(MainActivity.this,ImageGridActivity.class);
                 //Intent intent = new Intent(MainActivity.this,ServiceActivity.class);
-                Intent intent = new Intent(MainActivity.this,DrawerActivity.class);
+                //Intent intent = new Intent(MainActivity.this,DrawerActivity.class);
                 //Intent intent = new Intent(MainActivity.this,ToolbarActivity.class);
+                        //Intent(MainActivity.this, CustomIntentServiceActivity.class);
+                        Intent(MainActivity.this, MessageServiceActivity.class);
 
                 startActivity(intent);
                 //finish();

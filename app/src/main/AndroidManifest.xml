@@ -36,6 +36,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name=".service.SimpleIntentService" />
+        <service android:name=".service.MultiThreadService" />
+        <service android:name=".service.CustomIntentServiceActivity$MyIntentService"/>
+        <service android:name=".service.CustomIntentServiceActivity$MyCustomIntentService"/>
+        <service android:name=".service.MessageService"/>
 
         <activity
             android:name=".service.ServiceActivity"
@@ -56,7 +60,12 @@
         <activity
             android:name=".design.ToolbarActivity"
             android:label="Toolbar Activity" />
-        <activity android:name=".design.DrawerWithToolbarActivity"></activity>
+        <activity android:name=".design.DrawerWithToolbarActivity" />
+        <activity
+            android:name=".service.CustomIntentServiceActivity"
+            android:label="@string/title_activity_custom_intent_service"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".service.MessageServiceActivity" />
     </application>
 
 </manifest>
