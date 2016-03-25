@@ -1,5 +1,7 @@
 package org.cerion.apidemos;
 
+import java.util.Random;
+
 public class Tools {
 
 
@@ -11,4 +13,11 @@ public class Tools {
             e.printStackTrace();
         }
     }
+
+    private static final Random mRand = new Random();
+    public static int getRandomInteger() {
+        return mRand.nextInt(100);
+    }
+
+
 }
